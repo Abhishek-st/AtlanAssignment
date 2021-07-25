@@ -5,6 +5,7 @@ from . import views
 urlpatterns = [
     path('gettype/', views.getType.as_view()),
     path('createForm/',  views.createForm.as_view()),
+    path('myForm/', views.MyForm.as_view()),
     path('createQuestion/',  views.createQuestion.as_view()),
     path('editQuestion/<str:pk>', views.editQuestion.as_view()),
     path('createResponse/',views.createResponse.as_view()),
